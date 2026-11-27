@@ -15,6 +15,9 @@ body {
   background: var(--bg);
   color: var(--ink);
   font: 16px/1.7 -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+  /* 한글이 낱자로 끊기지 않고 낱말 단위로 줄바꿈되게. 긴 주소는 넘치지 않게 끊는다 */
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 a { color: var(--accent); }
